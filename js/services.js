@@ -8,7 +8,6 @@ pretotypingApp.factory('dataApi', function dataApi($http, $q, $routeParams) {
   return { Name: '' };
   return { Email: '' };
   return { Selection: '' };
-  return { Receiver: '' };
   return { Praise: '' };
   return { Suggestions: '' };
   return { Feedback: '' };

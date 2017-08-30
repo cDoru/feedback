@@ -156,10 +156,10 @@ pretotypingApp.controller('FinishCtrl', function ($scope, dataApi) {
   $scope.link = function () {
 
     // Receiver variables
-    if (dataApi.receiver == undefined) {
-      var receiver = '';
+    if (dataApi.email == undefined) {
+      var email = '';
     } else {
-      var receiver = dataApi.email;
+      var email = dataApi.email;
     }
 
     // Name variables
@@ -215,7 +215,7 @@ pretotypingApp.controller('FinishCtrl', function ($scope, dataApi) {
     }
 
     // The concatenated string email
-    $scope.email = "mailto:" + receiver + "?subject=" + subject + "&body=" + hey + name + doublebreak + starttext + praisestart + praise + suggestionsstart + suggestions + feedbackstart + feedback + doublebreak + endtext + doublebreak + "Best regards," + "%0D%0A" + "Your colleague" + doublebreak + link + url;
+    $scope.email = "mailto:" + email + "?subject=" + subject + "&body=" + hey + name + doublebreak + starttext + praisestart + praise + suggestionsstart + suggestions + feedbackstart + feedback + doublebreak + endtext + doublebreak + "Best regards," + "%0D%0A" + "Your colleague" + doublebreak + link + url;
   };
 
   // Go back button
