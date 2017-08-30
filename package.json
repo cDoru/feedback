@@ -1,12 +1,12 @@
 {
-  "name": "Feedback Card",
-  "title": "Feedback Card",
+  "name": "Feedback",
+  "title": "Feedback",
   "version": "1.0.0",
-  "homepage": "https://github.com/kristofferandreasen/feedbackcard",
+  "homepage": "https://github.com/kristofferandreasen/feedback",
   "author": "Kristoffer Andreasen",
   "license": {
     "type": "MIT",
-    "url": "https://github.com/kristofferandreasen/feedbackcard/blob/master/LICENSE"
+    "url": "https://github.com/kristofferandreasen/feedback/blob/master/LICENSE"
   },
   "devDependencies": {
     "bootstrap": "^3.3.7",
@@ -22,6 +22,6 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/kristofferandreasen/feedbackcard.git"
+    "url": "https://github.com/kristofferandreasen/feedback.git"
   }
 }

@@ -14,10 +14,6 @@ pretotypingApp.controller('HomeCtrl', function ($scope, dataApi) {
   // Create a selection variable and store the user selection for choice of feedback
   // ------------------------------------------------------------------------------------------------------ //
 
-  $scope.greatJob = function () {
-    dataApi.selection = 'Great Job!'
-  }
-
   $scope.developSkills = function () {
     dataApi.selection = 'Feedback from colleague';
   }
@@ -70,7 +66,7 @@ pretotypingApp.controller('Step1Ctrl', function ($scope, dataApi) {
 
   // Get textarea length
   $scope.change = function () {
-    $scope.text = dataApi.situation;
+    $scope.text = dataApi.praise;
   }
 
   // Go back button
@@ -101,7 +97,7 @@ pretotypingApp.controller('Step2Ctrl', function ($scope, dataApi) {
 
   // Get textarea length
   $scope.change = function () {
-    $scope.text = dataApi.observation;
+    $scope.text = dataApi.suggestions;
   }
 
   // Go back button
@@ -132,37 +128,6 @@ pretotypingApp.controller('Step3Ctrl', function ($scope, dataApi) {
 
   // Get textarea length
   $scope.change = function () {
-    $scope.text = dataApi.feeling;
-  }
-
-  // Go back button
-  $scope.goBack = function () {
-    window.history.back();
-  }
-
-
-});
-
-pretotypingApp.controller('Step4Ctrl', function ($scope, dataApi) {
-  'use strict';
-
-  // ------------------------------------------------------------------------------------------------------ //
-  // The view name
-  // ------------------------------------------------------------------------------------------------------ //
-
-  $scope.pagetitle = 'Step 4';
-
-  // ------------------------------------------------------------------------------------------------------ //
-  // Pass data to factory
-  // ------------------------------------------------------------------------------------------------------ //
-
-  $scope.data = dataApi;
-
-  // Initialize empty string
-  $scope.text = '';
-
-  // Get textarea length
-  $scope.change = function () {
     $scope.text = dataApi.feedback;
   }
 
@@ -174,7 +139,7 @@ pretotypingApp.controller('Step4Ctrl', function ($scope, dataApi) {
 
 });
 
-pretotypingApp.controller('Step5Ctrl', function ($scope, dataApi) {
+pretotypingApp.controller('FinishCtrl', function ($scope, dataApi) {
   'use strict';
 
   // ------------------------------------------------------------------------------------------------------ //
@@ -220,33 +185,24 @@ pretotypingApp.controller('Step5Ctrl', function ($scope, dataApi) {
     var starttext = "You have received feedback from a colleague.";
     var endtext = "I hope we can talk about the feedback soon.";
     var link = "Create your own feedback on: ";
-    var url = "https://kristofferandreasen.github.io/feedbackcard/#!/";
+    var url = "https://kristofferandreasen.github.io/feedback/";
 
-    // Situation variables
-    if (dataApi.situation == undefined) {
-      var situation = '';
-      var situationstart = '';
+    // Praise variables
+    if (dataApi.praise == undefined) {
+      var praise = '';
+      var praisestart = '';
     } else {
-      var situation = dataApi.situation;
-      var situationstart = "%0D%0A %0D%0ASituation:%0D%0A";
+      var praise = dataApi.praise;
+      var praisestart = "%0D%0A %0D%0APraise:%0D%0A";
     }
 
-    // Observation variables
-    if (dataApi.observation == undefined) {
-      var observationstart = '';
-      var observation = '';
+    // Suggestions variables
+    if (dataApi.suggestions == undefined) {
+      var suggestionsstart = '';
+      var suggestions = '';
     } else {
-      var observationstart = "%0D%0A %0D%0AObservation:%0D%0A";
-      var observation = dataApi.observation;
-    }
-
-    // Feeling variables
-    if (dataApi.feeling == undefined) {
-      var feelingstart = '';
-      var feeling = '';
-    } else {
-      var feelingstart = "%0D%0A %0D%0AFeeling:%0D%0A";
-      var feeling = dataApi.feeling;
+      var suggestionsstart = "%0D%0A %0D%0ASuggestions:%0D%0A";
+      var suggestions = dataApi.suggestions;
     }
 
     // Feedback variables
@@ -259,7 +215,7 @@ pretotypingApp.controller('Step5Ctrl', function ($scope, dataApi) {
     }
 
     // The concatenated string email
-    $scope.email = "mailto:" + receiver + "?subject=" + subject + "&body=" + hey + name + doublebreak + starttext + situationstart + situation + observationstart + observation + feelingstart + feeling + feedbackstart + feedback + doublebreak + endtext + doublebreak + "Best regards," + "%0D%0A" + "Your colleague" + doublebreak + link + url;
+    $scope.email = "mailto:" + receiver + "?subject=" + subject + "&body=" + hey + name + doublebreak + starttext + praisestart + praise + suggestionsstart + suggestions + feedbackstart + feedback + doublebreak + endtext + doublebreak + "Best regards," + "%0D%0A" + "Your colleague" + doublebreak + link + url;
   };
 
   // Go back button

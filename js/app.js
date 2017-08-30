@@ -20,13 +20,9 @@ pretotypingApp.config(function ($routeProvider) {
             templateUrl: 'views/step3.html',
             controller: 'Step3Ctrl'
         }).
-        when('/step4', {
-            templateUrl: 'views/step4.html',
-            controller: 'Step4Ctrl'
-        }).
-        when('/step5', {
-            templateUrl: 'views/step5.html',
-            controller: 'Step5Ctrl'
+        when('/finish', {
+            templateUrl: 'views/finish.html',
+            controller: 'FinishCtrl'
         }).
         when('/info', {
             templateUrl: 'views/info.html',
