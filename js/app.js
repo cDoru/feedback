@@ -1,4 +1,4 @@
-// Feedback Card App
+// Feedback App
 var pretotypingApp = angular.module('pretotypingApp', ['pretotypingApp.controllers', 'pretotypingApp.services', 'ngRoute', 'ngAnimate']);
 
 pretotypingApp.config(function ($routeProvider) {
