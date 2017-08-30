@@ -1,5 +1,7 @@
 # Feedback
 
+![Alt text](feedback.PNG?raw=true "Feedback Card")
+
 This site is inspired from recent training sessions regarding feedback. Something that is essential for employees to grow professionally. With this card, you can quickly create a simple feedback for employees in an intuitive manor.
 
 It works by prompting the user with one step at a time eventually creating an email with the right body text.
