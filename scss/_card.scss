@@ -1,0 +1,31 @@
+.card {
+    background-color: $white;
+    border: 1px solid $border;
+    border-radius: $border-radius;
+    box-shadow: 0 10px 40px 0 rgba(62,57,107,.07), 0 2px 9px 0 rgba(62,57,107,.06);
+}
+.hovercard {
+    background-color: $white;
+    border: 1px solid $border;
+    border-radius: $border-radius;
+    box-shadow: 0 10px 40px 0 rgba(62,57,107,.07), 0 2px 9px 0 rgba(62,57,107,.06);
+    transition: transform .2s ease,box-shadow .2s ease;
+    will-change: transform,box-shadow;
+}
+.hovercard:hover {
+    transform: translateY(-5px) translateZ(0);
+    box-shadow: 0 16px 32px 0 rgba(62,57,107,.28), 0 0 0 transparent;
+}
+.card .header {
+    background-color: $light-grey;
+    border-bottom: 1px solid $border;
+    padding: 20px;
+    border-top-left-radius: $border-radius;
+    border-top-right-radius: $border-radius;
+}
+.card .content {
+    background-color: $white;
+    padding: 30px;
+    border-bottom-left-radius: $border-radius;
+    border-bottom-right-radius: $border-radius;
+}

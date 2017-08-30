@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Feedback Card gives you an easy way to provide constructive feedback for your coworkers.">
+    <meta name="author" content="Kristoffer Andreasen">
+
+    <title>Feedback Card | Constructive feedback for coworkers</title>
+    <meta name="description" content="Feedback Card gives you an easy way to provide constructive feedback for your coworkers."
+    />
+
+    <!-- Twitter Card data -->
+    <meta name="twitter:card" value="summary">
+
+    <!-- Schema.org markup for Google+ -->
+    <meta itemprop="name" content="Feedback Card">
+    <meta itemprop="description" content="Feedback Card gives you an easy way to provide constructive feedback for your coworkers.">
+    <meta itemprop="image" content="https://github.com/kristofferandreasen/feedbackcard/blob/master/thumbnail.PNG">
+
+    <!-- Twitter Card data -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Feedback Card">
+    <meta name="twitter:description" content="Feedback Card gives you an easy way to provide constructive feedback for your coworkers.">
+    <!-- Twitter summary card with large image must be at least 280x150px -->
+    <meta name="twitter:image:src" content="https://github.com/kristofferandreasen/feedbackcard/blob/master/thumbnail.PNG">
+
+    <!-- Open Graph data -->
+    <meta property="og:title" content="Feedback Card" />
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content="https://kristofferandreasen.github.io/feedbackcard/#!/" />
+    <meta property="og:image" content="https://github.com/kristofferandreasen/feedbackcard/blob/master/thumbnail.PNG" />
+    <meta property="og:description" content="Feedback Card gives you an easy way to provide constructive feedback for your coworkers."
+    />
+
+    <!-- Bootstrap Core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Theme CSS -->
+    <link href="css/style.min.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700,800" rel="stylesheet">
+
+</head>
+
+<body ng-app="pretotypingApp" class="app-background" ng-style="myStyle">
+
+    <!--
+   ************************************************************
+   ****************  The Main App Part  ***********************
+   ************************************************************
+   -->
+
+    <!-- The main view -->
+    <div id="feedbackcard" ng-view class="slide"></div>
+
+    <!-- The share buttons in the top right corner -->
+    <a href="#/">
+        <div class="topright hidden-xs">
+            <ul class="list-inline">
+                <li>
+                    <a href="https://www.facebook.com/sharer/sharer.php?u=https://kristofferandreasen.github.io/feedbackcard/#!/" class="share-popup">
+                        <img src="img/facebook-logo.svg">
+                    </a>
+                </li>
+                <li>
+                    <a href="http://www.twitter.com/share?url=https://kristofferandreasen.github.io/feedbackcard/#!/">
+                        <img src="img/twitter-logo-button.svg">
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </a>
+
+    <!-- The info button -->
+    <a href="#!/info">
+        <div class="bottomright2 hidden-xs">
+            <img class="info_icon" src="img/info.svg" alt="Information">
+        </div>
+    </a>
+
+    <!-- The home button -->
+    <a href="#!/">
+        <div class="bottomleft hidden-xs">
+            <img class="info_icon" src="img/home-button.svg" alt="Home">
+        </div>
+    </a>
+
+    <!--
+   ************************************************************
+   **************  The Javascript Inclusion  ******************
+   ************************************************************
+   -->
+
+    <!-- jQuery -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+
+    <!-- Theme JavaScript -->
+    <script src="js/clean-blog.min.js"></script>
+
+    <!-- AngularJS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.1/angular.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.1/angular-route.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.1/angular-animate.min.js"></script>
+
+    <!-- AngularJS Project Files -->
+    <script src="js/app.js"></script>
+    <script src="js/services.js"></script>
+    <script src="js/controllers.js"></script>
+
+</body>
+
+</html>

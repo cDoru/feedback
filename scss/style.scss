@@ -1,0 +1,80 @@
+@import 'variables';
+@import '_buttons';
+@import '_viewanimation';
+@import '_card';
+@import '_forms';
+@import '_corners';
+
+
+body {
+  font-family: 'Open Sans', 'Times New Roman', serif;
+  font-size: 20px;
+  color: $black;
+}
+p a {
+  text-decoration: none;
+}
+p {
+  opacity: 0.8;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-weight: 800;
+}
+h3 {
+  font-size: 28;
+  font-weight: 300;
+  margin-top: 5px;
+}
+.subtitle {
+  font-size: 12px;
+  color: $green;
+  font-weight: 700;
+  letter-spacing: .8px;
+  margin-top: 15px;
+  line-height: 1.416;
+  text-transform: uppercase;
+}
+a {
+  color: $black;
+}
+a:hover,
+a:focus {
+  color: $black;
+  text-decoration: none;
+}
+.white {
+  color: $white;
+}
+
+// --------------------------------------------------------------------------------------------------------------------
+// Main Content Styles
+// --------------------------------------------------------------------------------------------------------------------
+/* App background */
+.app-background {
+  background: $blue;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+}
+#main_content {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+.lightgrey_background {
+  background-color: $light-grey;
+}
+.info_icon {
+  height: 32px;
+  width: 32px;
+}
+.icon {
+  height: 80px;
+  width: 80px;
+}

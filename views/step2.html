@@ -1,0 +1,52 @@
+<br>
+<br>
+
+<div class="container">
+    <div class="row text-center">
+
+        <br>
+
+        <div class="col-md-8 col-md-offset-2">
+            <div class="card">
+                <div class="header">
+                    <h1>
+                        The observation
+                    </h1>
+                    <p>
+                        What action did you observe to cause your thoughts.
+                    </p>
+                </div>
+                <div class="content">
+                    <textarea name="situation" id="situation" cols="40" rows="5" ng-model="data.observation" maxlength="300" ng-change="change()"></textarea>
+                    <br>
+                    <br>
+                    <a href="#!/step3" class="btn__solid">Next step</a>
+                </div>
+                <div class="bottomright">
+                    <p>
+                        3/6
+                    </p>
+                </div>
+                <div class="bottomleft2">
+                    <p>
+                        {{ text.length }}/300
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<a href="#!/step1">
+    <div class="topleft hidden-xs">
+        <ul class="list-inline">
+            <li>
+                <img src="img/left-arrow.svg">
+            </li>
+            <li>
+                <p class="white">Back</p>
+            </li>
+        </ul>
+    </div>
+</a>

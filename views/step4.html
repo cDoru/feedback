@@ -1,0 +1,52 @@
+<br>
+<br>
+
+<div class="container">
+    <div class="row text-center">
+
+        <br>
+
+        <div class="col-md-8 col-md-offset-2">
+            <div class="card">
+                <div class="header">
+                    <h1>
+                        My advice
+                    </h1>
+                    <p>
+                        Write your advice for your colleague.
+                    </p>
+                </div>
+                <div class="content">
+                    <textarea name="situation" id="situation" cols="40" rows="5" ng-model="data.feedback" maxlength="300" ng-change="change()"></textarea>
+                    <br>
+                    <br>
+                    <a href="#!/step5" class="btn__solid">Next step</a>
+                </div>
+            </div>
+            <div class="bottomright">
+                <p>
+                    5/6
+                </p>
+            </div>
+            <div class="bottomleft2">
+                <p>
+                    {{ text.length }}/300
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<a href="#!/step3">
+    <div class="topleft hidden-xs">
+        <ul class="list-inline">
+            <li>
+                <img src="img/left-arrow.svg">
+            </li>
+            <li>
+                <p class="white">Back</p>
+            </li>
+        </ul>
+    </div>
+</a>
